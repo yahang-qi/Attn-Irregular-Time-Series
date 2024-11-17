@@ -1,0 +1,21 @@
+model_config:
+  N: 4
+  embed_dim: 128
+  n_heads: 4
+  forward_expansion: 2
+  act_name: 'relu'
+  p: 0.25
+  attn_p: 0.25
+  device: 'cuda'
+
+optimizer_config:
+  weight_decay: 0.0001
+  learning_rate: 0.001
+  num_epochs: 100
+
+data_config:
+  train_dataset_path: '/home/qqqq/datasets/PhysioNet2012_Preprocessed/set-a'
+  train_batch_size: 32
+  test_dataset_path: '/home/qqqq/datasets/PhysioNet2012_Preprocessed/set-c'
+  test_batch_size: 32
+
